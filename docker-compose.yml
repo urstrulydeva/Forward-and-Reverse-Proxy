@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  squid-proxy:
+    build: ./squid
+    container_name: squid_forward_proxy
+    ports:
+      - "3128:3128"
+    restart: always
+
+  nginx-proxy:
+    build: ./nginx
+    container_name: nginx_reverse_proxy
+    ports:
+      - "8080:8080"
+    depends_on:
+      - squid-proxy
+    restart: always
