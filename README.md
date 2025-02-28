@@ -76,5 +76,4 @@ Feel free to fork the repository and submit pull requests for enhancements or bu
 This project is licensed under the MIT License.
 
 ---
-Your **Forward and Reverse Proxy setup is now complete! 🚀**
 
